@@ -26,7 +26,7 @@ prompt = ChatPromptTemplate(
             "You are an AI that has access to a SQLite database.\n"
             f"The database has tables of: {tables}\n"
             "Do not make any assumptions about what tables exist "
-            "or what columns exist. Instead, function 'describe_tables'"
+            "or what columns exist. Instead, use the function 'describe_tables'"
             )),
         MessagesPlaceholder(variable_name="chat_history"),
         HumanMessagePromptTemplate.from_template("{input}"),
